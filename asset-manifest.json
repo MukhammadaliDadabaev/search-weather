@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/search-weather/static/css/main.b74f99c9.css",
+    "main.js": "/search-weather/static/js/main.0b468844.js",
+    "static/js/787.d9312eb8.chunk.js": "/search-weather/static/js/787.d9312eb8.chunk.js",
+    "static/media/background.jpg": "/search-weather/static/media/background.d84e38aa9a6a0804b139.jpg",
+    "static/media/moon.png": "/search-weather/static/media/moon.b0d7c838a5eb7ee85998.png",
+    "static/media/sun.png": "/search-weather/static/media/sun.c083fc151ebd00ab40a2.png",
+    "index.html": "/search-weather/index.html",
+    "main.b74f99c9.css.map": "/search-weather/static/css/main.b74f99c9.css.map",
+    "main.0b468844.js.map": "/search-weather/static/js/main.0b468844.js.map",
+    "787.d9312eb8.chunk.js.map": "/search-weather/static/js/787.d9312eb8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b74f99c9.css",
+    "static/js/main.0b468844.js"
+  ]
+}
