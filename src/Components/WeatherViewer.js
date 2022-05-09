@@ -7,11 +7,11 @@ import { PushSpinner } from "react-spinners-kit";
 
 export const WeatherViewer = ({ cityData }) => {
 
-  const [data, setData] = useState();
-  const [loading, setLoading] = useState();
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setData();
+    setData(null);
     setLoading(true);
     axios
       .get(
@@ -35,8 +35,7 @@ export const WeatherViewer = ({ cityData }) => {
               {Math.ceil(data.Temperature.Metric.Value)}
               <sup className="deg">&deg;{data.Temperature.Metric.Unit}</sup> 
             </h2>
-            {data.IsDayTime===true&&<img className="weather-img" src={sun} alt="sun"/>}
-            {data.IsDayTime===false&&<img className="weather-img" src={moon} alt="moon"/>}
+            {data.IsDayTime===true?<img className="weather-img" src={sun} alt="sun"/>:<img className="weather-img" src={moon} alt="moon"/>}
             <p className="weather-text">{data.WeatherText}</p>
           </div>
         </main>
