@@ -13,7 +13,7 @@ function App() {
   // city search form
   const fetchCity = (e) =>{
     e.preventDefault();
-    axios.get(`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=ICfOrVGI3ofdnGODMlLrRMwyPbISOCdO&q=${citySearch}`)
+    axios.get(`https://dataservice.accuweather.com/locations/v1/cities/search?apikey=ICfOrVGI3ofdnGODMlLrRMwyPbISOCdO&q=${citySearch}`)
     .then((res)=>{
       setCityData(res.data[0]);
       setCitySearch('');
